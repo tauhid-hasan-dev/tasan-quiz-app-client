@@ -3,6 +3,7 @@ import Option from '../Option/Option';
 
 const Question = ({data, idx, total}) => {
     const {correctAnswer, options, question} = data;
+    console.log(data)
     return (
         <div className='text-white border border-slate-800 bg-card-bg-color mt-10 flex lg:flex-row flex-col gap-10 p-10 rounded-3xl'>
             <div className='w-full lg:w-[60%] flex flex-col gap-10 text-center lg:text-left  '>
@@ -12,7 +13,7 @@ const Question = ({data, idx, total}) => {
             <div className='w-full lg:w-[40%] '>
                  <ul className='flex flex-col gap-5'>
                     {
-                        options.map((option, idx) => <Option key={idx} option={option}></Option>)
+                        options.map((option, idx) => <Option key={idx} option={option} correctAnswer={correctAnswer}></Option>)
                     }
                  </ul>
             </div>
