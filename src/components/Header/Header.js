@@ -1,11 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBurger } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
-        <div className="navbar bg-navbar-color  shadow-md px-5  lg:px-20 py-5 ">
+        <div className="navbar bg-navbar-color  shadow-md px-5  lg:px-32 py-5 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden text-white text-6xl">
@@ -15,20 +15,20 @@ const Header = () => {
                         <NavLink
                     to="/home"
                     className={({ isActive }) =>
-              isActive ? 'text-orange-400 border-b-2 border-logo-color': undefined
+              isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
             }
                     >Home</NavLink>
 
                             <NavLink to='/statistics' className={({ isActive }) =>
-              isActive ? 'text-orange-400 border-b-2 border-logo-color': undefined
+              isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
             } >Statistics</NavLink>
 
                             <NavLink to='/blog' className={({ isActive }) =>
-              isActive ? 'text-orange-400 border-b-2 border-logo-color': undefined
+              isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
             }>Blog</NavLink>
                         </ul>
                     </div>
-                    <a href=" " className="btn btn-ghost normal-case text-4xl text-logo-color font-bold ">foody</a>
+                    <Link to="/" className="btn btn-ghost normal-case text-4xl text-blue-color font-bold ">tasan quiz app</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex text-6xl text-logo-text-color  ">
                     <FontAwesomeIcon icon={faBurger} />
@@ -38,16 +38,16 @@ const Header = () => {
                     <NavLink
                     to="/home"
                     className={({ isActive }) =>
-              isActive ? 'text-orange-400 border-b-2 border-logo-color': undefined
+              isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
             }
                     >Home</NavLink>
 
                             <NavLink to='/statistics' className={({ isActive }) =>
-              isActive ? 'text-orange-400 border-b-2 border-logo-color': undefined
+              isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
             } >Statistics</NavLink>
 
                             <NavLink to='/blog' className={({ isActive }) =>
-              isActive ? 'text-orange-400 border-b-2 border-logo-color': undefined
+              isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
             }>Blog</NavLink>
 
                             
