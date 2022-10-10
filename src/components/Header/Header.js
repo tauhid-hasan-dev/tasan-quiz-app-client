@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBurger } from '@fortawesome/free-solid-svg-icons';
+/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBurger } from '@fortawesome/free-solid-svg-icons'; */
 import logo from '../../images/logo.png'
 
 const Header = () => {
     return (
-        <div className="navbar bg-navbar-color  shadow-md px-5  lg:px-32 py-5 ">
+        <div className="navbar bg-navbar-color  border-b border-slate-800 shadow-md px-5  lg:px-32 py-5 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden text-white text-6xl">
@@ -38,23 +38,21 @@ const Header = () => {
                     
                 </div>
                 <div className="navbar-end hidden lg:flex">
-                    <ul className="menu menu-horizontal p-0 text-slate-100 gap-5 text-lg ">
-                    <NavLink
-                    to="/home"
-                    className={({ isActive }) =>
-              isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
-            }
-                    >Home</NavLink>
+                    <ul className="menu menu-horizontal p-0 text-slate-100 gap-10 text-lg ">
+                                <NavLink
+                                to="/home"
+                                className={({ isActive }) =>
+                        isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
+                        }
+                                >Home</NavLink>
 
-                            <NavLink to='/statistics' className={({ isActive }) =>
-              isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
-            } >Statistics</NavLink>
+                                        <NavLink to='/statistics' className={({ isActive }) =>
+                        isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
+                        } >Statistics</NavLink>
 
-                            <NavLink to='/blog' className={({ isActive }) =>
-              isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
-            }>Blog</NavLink>
-
-                            
+                                        <NavLink to='/blog' className={({ isActive }) =>
+                        isActive ? 'text-blue-color border-b-2 border-logo-color': undefined
+                        }>Blog</NavLink>  
                     </ul>
                 </div> 
             </div>
