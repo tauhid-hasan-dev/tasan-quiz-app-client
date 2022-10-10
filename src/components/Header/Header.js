@@ -29,7 +29,7 @@ const Header = () => {
             }>Blog</NavLink>
                         </ul>
                     </div>
-                    <Link to="/" className="btn btn-ghost normal-case text-4xl text-blue-color font-bold ">
+                    <Link to="/" className="btn btn-ghost normal-case text-3xl  lg:text-4xl text-blue-color font-bold ">
                         tasan quiz app</Link>
                 </div>
                 <div className=" navbar-center hidden lg:flex h-16 w-16 ">
