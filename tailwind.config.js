@@ -8,6 +8,8 @@ module.exports = {
       colors: {
         'navbar-color': '#0B1222',
         'blue-color': '#0284C7',
+        'image-color': '#0093E9',
+
 
       },
     },
