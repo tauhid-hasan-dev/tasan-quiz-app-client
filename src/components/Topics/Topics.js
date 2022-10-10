@@ -3,13 +3,13 @@ import React from 'react';
 const Topics = ({topic}) => {
     const {name, logo, total} = topic;
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card bg-card-color  shadow-2xl border border-slate-800">
             <figure><img src={logo} alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">{name}</h2>
-                <p>Total Questions: {total}</p>
+                <h2 className="card-title text-white">{name}</h2>
+                <p className='text-slate-400 mb-5'>Total Questions: {total}</p>
                 <div className="card-actions ">
-                    <button className="btn btn-primary w-full">Buy Now</button>
+                    <button className="btn btn-primary w-full">Take Quiz </button>
                 </div>
             </div>
         </div>
