@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBurger } from '@fortawesome/free-solid-svg-icons';
+import logo from '../../images/logo.png'
 
 const Header = () => {
     return (
@@ -28,10 +29,13 @@ const Header = () => {
             }>Blog</NavLink>
                         </ul>
                     </div>
-                    <Link to="/" className="btn btn-ghost normal-case text-4xl text-blue-color font-bold ">tasan quiz app</Link>
+                    <Link to="/" className="btn btn-ghost normal-case text-4xl text-blue-color font-bold ">
+                        tasan quiz app</Link>
                 </div>
-                <div className="navbar-center hidden lg:flex text-6xl text-logo-text-color  ">
-                    <FontAwesomeIcon icon={faBurger} />
+                <div className=" navbar-center hidden lg:flex h-16 w-16 ">
+                   {/*  <FontAwesomeIcon icon={faBurger} /> */}
+                   <img src={logo} alt="" />
+                    
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal p-0 text-slate-100 gap-5 text-lg ">
