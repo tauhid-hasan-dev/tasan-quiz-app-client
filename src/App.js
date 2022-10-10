@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <p>this is the assignment project 9</p>
+      <h1>Tasan Quiz App</h1>
     </div>
   );
 }
