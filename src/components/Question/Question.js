@@ -1,4 +1,5 @@
 import React from 'react';
+import Option from '../Option/Option';
 
 const Question = ({data, idx, total}) => {
     const {correctAnswer, options, question} = data;
@@ -8,9 +9,9 @@ const Question = ({data, idx, total}) => {
                 <p > Question {idx + 1}/{total}: {question} </p>
             </div>
             <div className='w-[40%] '>
-                 <ul className=''>
+                 <ul className='flex flex-col gap-5'>
                     {
-                        options.map(option => <li>{option}</li>)
+                        options.map((option, idx) => <Option key={idx} option={option}></Option>)
                     }
                  </ul>
             </div>
