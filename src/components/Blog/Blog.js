@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className="products bg-card-color col-span-7 lg:col-span-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10 p-7 lg:p-28 text-white">
+        <div className="products bg-card-color col-span-7 lg:col-span-5 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3  gap-10 p-7 lg:p-28 text-white">
         <div className=' shadow-2xl rounded-lg relative bg-card-bg-color  border border-slate-800'>
             <div className='p-4  '>
                 <p className='text-lg text-blue-color font-bold mb-2'>What is the purpose of react router ?</p>
