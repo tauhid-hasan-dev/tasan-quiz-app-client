@@ -22,7 +22,6 @@ const Question = ({data, idx, total}) => {
                     <p className='text-lg lg:text-2xl'>{question}</p>
                 </div>
                 <div className='w-full lg:w-[45%] '>
-
                     <ul className='flex flex-col gap-7'>
                         {
                             options.map((option, idx) => <Option key={idx} option={option} correctAnswer={correctAnswer}></Option>)
