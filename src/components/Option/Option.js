@@ -6,16 +6,17 @@ const Option = ({option, correctAnswer}) => {
         if(option === correctAnswer){
             Swal.fire(
                 'Correct Answer!',
-                ` ${correctAnswer}`,
+                'Congratulations!!!',
                 'success'
               )
         }
       };
     
     return (
-        <div className={`text-lg lg:text-xl  border lg:border-2  border-blue-500 flex lg:p-4 p-2  rounded-lg cursor-pointer hover:bg-cyan-900`}  onClick={handleClick}>
+        <div className={`text-lg lg:text-xl  border lg:border-2  border-blue-500 flex lg:p-4 p-2  rounded-lg cursor-pointer hover:bg-cyan-900 `}  onClick={handleClick}>
+            
             <li className="form-control" >
-                <span className="label-text text-white text-2xl">{option}</span> 
+                <span className="label-text text-white text-lg lg:text-xl">{option}</span> 
             </li>
         </div>
     );
