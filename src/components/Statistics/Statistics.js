@@ -6,21 +6,21 @@ const Statistics = () => {
     const datas = useLoaderData();
     const data = datas.data;
     return (
-        <div>
-            <p>this is statistics</p>
-            <LineChart
-                    width={1000}
-                    height={400}
-                    data={data} > 
-                    console.log(data);
-                    <CartesianGrid strokeDasharray="3 3" />
-                        <Line type="monotone" dataKey="total" stroke="#8884d8" activeDot={{ r: 8 }} />
-                        <Line type="monotone" dataKey="quiz" stroke="#82ca9d" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                    </LineChart>
+        <div className='flex flex-col justify-center items-center lg:py-10'>
+            <p className='text-2xl font-semibold text-center py-5'>Total Questions Statistics</p>
+            <div>
+                <LineChart
+                        width={1000}
+                        height={400}
+                        data={data} > 
+                        <CartesianGrid strokeDasharray="3 3" />
+                            <Line type="monotone" dataKey="total" stroke="#8884d8" activeDot={{ r: 8 }} />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                </LineChart>
+            </div>
         </div>
     );
 };
