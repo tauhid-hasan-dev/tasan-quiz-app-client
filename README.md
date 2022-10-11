@@ -8,5 +8,6 @@ Live website :
 * React router used for routing and dynamic routing applied.
 * Tailwind css and Daisy Ui used for styling and the web app is fully responsive.
 * FontAwesome icon used for icons and Sweet 2 toastify used for toastification.
+* recharts used and its responsive.
               
 
