@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Option from '../Option/Option';
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons'; 
 import Swal from 'sweetalert2';
 
 const Question = ({data, idx, total}) => {
+    const [score, setScore] = useState(0);
+    
     const {correctAnswer, options, question} = data;
     const handleCorrectAns = ()=>{
         Swal.fire(
             `${correctAnswer}`,
           )
+    }
+    const handleChange = (option) =>{
+        if(option === correctAnswer){
+            setScore(score + 1)
+        }
     }
     return (
         <div >
@@ -24,7 +31,7 @@ const Question = ({data, idx, total}) => {
                 <div className='w-full lg:w-[45%] '>
                     <ul className='flex flex-col gap-7'>
                         {
-                            options.map((option, idx) => <Option key={idx} option={option} correctAnswer={correctAnswer}></Option>)
+                            options.map((option, idx) => <Option key={idx} option={option} correctAnswer={correctAnswer} handleChange={handleChange}></Option>)
                         }
                     </ul>
                 </div>

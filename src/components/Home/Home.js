@@ -15,7 +15,7 @@ const Home = () => {
                 <p className='text-white font-bold text-2xl lg:text-5xl '>Test you to be the best you</p>
                 </div>
             </div>
-            <div className='px-8 py-10 lg:py-28 lg:px-28 flex flex-col lg:flex-row bg-card-bg-color gap-10 '>
+            <div className='px-8 py-10 md:px-56 lg:py-28 lg:px-28 flex flex-col lg:flex-row bg-card-bg-color gap-10 '>
                 {
                     topics.map(topic => <Topics key={topic.id} topic={topic}></Topics>)
                 }

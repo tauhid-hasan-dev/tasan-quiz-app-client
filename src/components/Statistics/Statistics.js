@@ -6,8 +6,8 @@ const Statistics = () => {
     const datas = useLoaderData();
     const data = datas.data;
     return (
-        <div className='flex flex-col justify-center items-center lg:py-10 bg-slate-900 '>
-            <p className='text-2xl font-semibold text-center py-10'>Total Questions Statistics</p>
+        <div className='flex flex-col justify-center items-center pt-10 pb- lg:pt-10 lg:pb-56 md:pb-96 pb-96 bg-slate-900 '>
+            <p className='text-2xl font-semibold text-center py-10 text-blue-color'>Total Questions Statistics</p>
             <div className='lg:w-[50%] w-[100%] h-64 pl-5 flex flex-col items-center p-20 justify-center'>
                 <ResponsiveContainer width="99%" height={300}>
                     <LineChart
@@ -15,8 +15,8 @@ const Statistics = () => {
                             height={400}
                             data={data} > 
                             <CartesianGrid strokeDasharray="3 3" />
-                                <Line type="monotone" dataKey="total" stroke="#8884d8" activeDot={{ r: 8 }} />
-                                <XAxis dataKey="name" />
+                                <Line type="monotone" dataKey="total" stroke="#0284C7" activeDot={{ r: 8 }} />
+                                <XAxis dataKey="name" stroke="#0284C7"/>
                                 <YAxis />
                                 <Tooltip />
                                 <Legend />
