@@ -7,7 +7,7 @@ const Statistics = () => {
     const data = datas.data;
     return (
         <div className='flex flex-col justify-center items-center pt-10 pb- lg:pt-10 lg:pb-56 md:pb-96 pb-96 bg-slate-900 '>
-            <p className='text-2xl font-semibold text-center py-10 text-blue-color'>Total Questions Statistics</p>
+            <p className='text-2xl font-semibold text-center py-10 text-slate-300'>Total Questions Statistics</p>
             <div className='lg:w-[50%] w-[100%] h-64 pl-5 flex flex-col items-center p-20 justify-center'>
                 <ResponsiveContainer width="99%" height={300}>
                     <LineChart
