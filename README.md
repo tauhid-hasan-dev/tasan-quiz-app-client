@@ -1,4 +1,4 @@
-# Tasan Quiz App 
+# Tasan Quiz App (single page application)
 
 Live website
 
