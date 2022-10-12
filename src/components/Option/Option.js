@@ -10,6 +10,12 @@ const Option = ({option, correctAnswer, handleChange}) => {
                 'Congratulations!!!',
                 'success'
               )
+        }else{
+            Swal.fire({
+                icon: 'error',
+                title: 'Wrong Answer!',
+                text: 'Please try again!',
+              })
         }
       };
 
